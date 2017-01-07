@@ -1,49 +1,25 @@
 func printAge(name: String) {
     print("\(name) is 29")
 }
-
-printAge(name: "Adam")
-
-
-func happyBirthday(age: Int) {
-    print("Happy birthday #\(age)!")
-}
-
-
 func getAge(name: String) -> Int {
     return 29
 }
-
-
-
-func badGetAge(name: String) -> Int {
-    print("\(name) is 29")
-    return badGetAge(name: "Hi")
+func happyBirthday(age: Int) {
+    print("Happy birthday #\(age)!")
 }
-
-
-
 let friend = "Emily"
 var friendAge = getAge(name: friend)
-happyBirthday(age: friendAge)
-
-
+happyBirthday(age: 29)
 func birthdayGreeting(age: Int) -> String {
     return "Happy birthday #\(age)!"
 }
-
-var greeting = birthdayGreeting(age: 30)
-print(greeting)
-
+birthdayGreeting(age: 30)
 
 func getAgeAndCongratulate(name: String) -> Int {
     let age = 29
     print("Happy \(age)th birthday, \(name)!")
     return age
 }
-
+getAgeAndCongratulate(name: "Ryan")
 let friend2 = "Pete"
 var friend2Age = getAgeAndCongratulate(name: friend2)
-
-
-
